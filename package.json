@@ -1,0 +1,14 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Logger for 'Input Github here'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OSP 7",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.9"
+  }
+}

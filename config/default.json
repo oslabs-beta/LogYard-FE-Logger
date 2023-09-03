@@ -1,0 +1,7 @@
+{
+  "LogYard": {
+    "sendAddress": "https://localhost:3000/",
+    "globalContext": {"default": 0},
+    "serverPassword": ""
+  }
+}
