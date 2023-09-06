@@ -1,4 +1,5 @@
 const config = require('config');
+const uploadLog = require('./uploadLog');
 
 const logConfig = config.get('LogYard');
 
@@ -18,15 +19,7 @@ const createLog = async (logString, options = { severity: 0, context: {} }) => {
     serverPassword: logConfig.serverPassword,
   }
   
-  const result = await fetch(logConfig.sendAddress, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-
-  return result.ok;
+  uploadLog(data);
 };
 
 module.exports = { createLog };

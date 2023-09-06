@@ -9,6 +9,7 @@
   "author": "OSP 7",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.3.9"
+    "config": "^3.3.9",
+    "mongodb": "^6.0.0"
   }
 }
