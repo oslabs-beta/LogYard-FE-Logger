@@ -1,25 +1,29 @@
-const config = require('config');
-const uploadLog = require('./uploadLog');
+import postLog from './postLog';
 
-const logConfig = config.get('LogYard');
-
-const createLog = async (logString, options = { severity: 0, context: {} }) => {
+const createLog = async (level, message, Context = {}) => {
   
-  const defaults = Object.assign({
-    severity: 0,
-    context: {},
-  }, options);
+  // const defaults = Object.assign({
+  //   severity: 0,
+  //   context: {},
+  // }, options);
   
-  
-  const data = {
-    logString,
-    context: { ...logConfig.globalContext, ...defaults.context },
-    severity: defaults.severity,
-    time: new Date(),
-    serverPassword: logConfig.serverPassword,
+  const params = {
+    level,
+    message,
+      meta : {
+        Context
+      }
   }
   
-  uploadLog(data);
+  // const data = {
+  //   logString,
+  //   context: { ...logConfig.globalContext, ...defaults.context },
+  //   severity: defaults.severity,
+  //   time: new Date(),
+  //   serverPassword: logConfig.serverPassword,
+  // }
+
+  postLog(params);
 };
 
-module.exports = { createLog };
+export default createLog;

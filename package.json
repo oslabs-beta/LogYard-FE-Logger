@@ -1,7 +1,7 @@
 {
   "name": "logger",
   "version": "1.0.0",
-  "description": "Logger for 'Input Github here'",
+  "description": "Logger for Log Yard",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

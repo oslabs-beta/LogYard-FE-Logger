@@ -1,7 +1,7 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const config = require('config');
+// const config = require('config');
 
-const logConfig = config.get('LogYard');
+// const logConfig = config.get('LogYard');
 
 const client = new MongoClient(logConfig.uri,  {
   serverApi: {

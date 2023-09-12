@@ -1,7 +1,7 @@
 const client = require('./establishConnection');
-const config = require('config');
+// const config = require('config');
 
-const logConfig = config.get('LogYard');
+// const logConfig = config.get('LogYard');
 
 const uploadLog = async (logData)=>{
   try {
