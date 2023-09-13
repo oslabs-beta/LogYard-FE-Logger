@@ -1,0 +1,8 @@
+{
+  "LogYard": {
+    "globalContext": {"default": 0},
+    "uri": "",
+    "databaseName": "test",
+    "collectionName": "logs"
+  }
+}

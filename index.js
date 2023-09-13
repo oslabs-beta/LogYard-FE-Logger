@@ -1,7 +1,12 @@
 import postLog from './postLog';
 
 
-const logger = async (level, message, Context = {}) => {
+const createLog = async (level, message, Context = {}) => {
+  
+  // const defaults = Object.assign({
+  //   severity: 0,
+  //   context: {},
+  // }, options);
   
   const params = {
     level,
@@ -14,4 +19,4 @@ const logger = async (level, message, Context = {}) => {
   postLog(params);
 };
 
-export default logger;
+export default createLog;
