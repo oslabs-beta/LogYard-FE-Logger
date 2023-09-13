@@ -13,7 +13,7 @@ const postLog = async (params) => {
     })
   }
   finally {
-
+    console.log('done post')
   }
 }
 export default postLog;

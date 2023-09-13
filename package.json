@@ -2,7 +2,7 @@
   "name": "logger",
   "version": "1.0.0",
   "description": "Logger for Log Yard",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
