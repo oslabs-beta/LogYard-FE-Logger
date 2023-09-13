@@ -1,11 +1,7 @@
 import postLog from './postLog';
 
- const logger = async (level, message, Context = {}) => {
-  
-  // const defaults = Object.assign({
-  //   severity: 0,
-  //   context: {},
-  // }, options);
+
+const logger = async (level, message, Context = {}) => {
   
   const params = {
     level,
@@ -15,14 +11,6 @@ import postLog from './postLog';
       }
   }
   
-  // const data = {
-  //   logString,
-  //   context: { ...logConfig.globalContext, ...defaults.context },
-  //   severity: defaults.severity,
-  //   time: new Date(),
-  //   serverPassword: logConfig.serverPassword,
-  // }
-
   postLog(params);
 };
 
