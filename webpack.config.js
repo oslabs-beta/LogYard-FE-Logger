@@ -4,7 +4,7 @@ const filename = `${FILE_NAME}${NODE_ENV === 'production' ? '.min' : ''}.js`;
 module.exports = {
   mode: NODE_ENV || 'development',
   entry: [
-    './index.mjs',
+    './index.js',
   ],
   output: {
     path: path.join(__dirname, 'dist'),
