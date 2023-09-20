@@ -1,11 +1,17 @@
 {
   "name": "logyard",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Logger for Log Yard",
-  "main": "index.mjs",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:commonjs": "babel index.mjs --out-dir lib"
   },
   "author": "OSP 7",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20"
+  }
 }
