@@ -1,4 +1,4 @@
-import postLog from './postLog.js';
+import postLog from '../postLog.js';
 
 
 const createLog = async (level, message, Context = {}) => {

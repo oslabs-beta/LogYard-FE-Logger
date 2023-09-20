@@ -1,6 +1,6 @@
 {
   "name": "logyard",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "Logger for Log Yard",
   "main": "lib/index.js",
   "scripts": {
