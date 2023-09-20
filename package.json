@@ -1,6 +1,6 @@
 {
   "name": "logyard",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Logger for Log Yard",
   "main": "index.mjs",
   "scripts": {

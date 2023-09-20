@@ -1,6 +1,7 @@
-import loggerConfig from '~/logger.config.js'
+// import loggerConfig from '/logger.config.js'
 
-const api = loggerConfig.api;
+// const api = loggerConfig.api;
+const api = 'http://localhost:8080/api/logs';
 
 const postLog = async (params) => {
   try {
