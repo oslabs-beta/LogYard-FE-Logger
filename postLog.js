@@ -1,4 +1,4 @@
-import loggerConfig from '/logger.config.js'
+import loggerConfig from '~/logger.config.js'
 
 const api = loggerConfig.api;
 
