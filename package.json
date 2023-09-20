@@ -1,5 +1,5 @@
 {
-  "name": "sawmill",
+  "name": "logyard",
   "version": "1.0.0",
   "description": "Logger for Log Yard",
   "main": "index.mjs",
