@@ -1,16 +1,15 @@
 {
   "name": "logyard",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Logger for Log Yard",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:commonjs": "babel index.mjs --out-dir lib",
+    "build:commonjs": "babel index.js --out-dir lib",
     "build:umd": "cross-env FILE_NAME=logyard webpack",
     "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
     "clean": "rimraf lib dist",
     "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min"
-
   },
   "author": "OSP 7",
   "license": "ISC",
