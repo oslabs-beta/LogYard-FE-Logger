@@ -32,6 +32,7 @@ const $43d7963e56408b24$var$createLog = async (level, message, Context = {})=>{
         "silly"
     ];
     if (!levels.includes(level)) return console.log("Invalid Level");
+    for(const key in Context)if (typeof Context[key] === "object") Context[key] = "INVALID CONTEXT";
     const params = {
         level: level,
         message: message,

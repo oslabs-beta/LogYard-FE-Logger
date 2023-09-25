@@ -8,6 +8,12 @@ const createLog = async (level, message, Context = {}) => {
     return console.log('Invalid Level');
   }
 
+  for (const key in Context) {
+    if (typeof Context[key] === 'object') {
+      Context[key] = 'INVALID CONTEXT';
+    }
+  }
+
   const params = {
     level,
     message,
