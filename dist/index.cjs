@@ -22,6 +22,16 @@ var $811c22e66fb1c041$export$2e2bcd8739ae039 = $811c22e66fb1c041$var$postLog;
 
 
 const $43d7963e56408b24$var$createLog = async (level, message, Context = {})=>{
+    const levels = [
+        "error",
+        "warn",
+        "http",
+        "debug",
+        "verbose",
+        "info",
+        "silly"
+    ];
+    if (!levels.includes(level)) return console.log("Invalid Level");
     const params = {
         level: level,
         message: message,
