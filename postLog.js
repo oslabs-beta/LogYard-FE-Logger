@@ -1,4 +1,4 @@
-const api = 'http://localhost:8080/api/logs';
+const api = 'http://localhost:3333/api/logs';
 
 const postLog = async (params) => {
     await fetch (api, {
